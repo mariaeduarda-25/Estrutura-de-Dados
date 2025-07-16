@@ -34,8 +34,8 @@ def partition(arr, left, right):
     return i + 1
 
 
-def two_sum_sorted(nums, target):
-    arr = [(num, idx) for idx, num in enumerate(nums)]
+def two_sum_sorted(numero, alvo):
+    arr = [(num, idx) for idx, num in enumerate(numero)]
     quicksort(arr)
 
     left = 0
@@ -43,9 +43,9 @@ def two_sum_sorted(nums, target):
 
     while left < right:
         current_sum = arr[left][0] + arr[right][0]
-        if current_sum == target:
+        if current_sum == alvo:
             return [arr[left][1], arr[right][1]]
-        elif current_sum < target:
+        elif current_sum < alvo:
             left += 1
         else:
             right -= 1
