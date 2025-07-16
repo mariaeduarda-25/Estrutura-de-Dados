@@ -34,8 +34,8 @@ def partition(arr, left, right):
     return i + 1
 
 
-def two_sum_sorted(numero, alvo):
-    arr = [(num, idx) for idx, num in enumerate(numero)]
+def two_sum_sorted(numeros, alvo):
+    arr = [(num, idx) for idx, num in enumerate(numeros)]
     quicksort(arr)
 
     left = 0
