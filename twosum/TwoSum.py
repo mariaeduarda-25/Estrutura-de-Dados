@@ -1,4 +1,4 @@
-def two_sum_brute_force(numeros, alvo):
+def two_sum_forca_bruta(numeros, alvo):
     for i in range(len(numeros)):
         for j in range(i + 1, len(numeros)):
             if numeros[i] + numeros[j] == alvo:
@@ -57,6 +57,6 @@ if __name__ == "__main__":
     numeros = [2, 7, 11, 15]
     alvo = 9
 
-    print("Força bruta:", two_sum_brute_force(numeros, alvo))  # [0, 1]
+    print("Força bruta:", two_sum_forca_bruta(numeros, alvo))  # [0, 1]
     print("Hash:", two_sum_hash(numeros, alvo))                # [0, 1]
     print("QuickSort:", two_sum_sorted(numeros, alvo))         # [0, 1]
